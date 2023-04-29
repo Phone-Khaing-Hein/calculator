@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const Cell = ({ number, operator = false, colspan = 1 }) => (
-  <div style={{ backgroundColor: operator ? 'orange' : '', width: colspan === 2 ? '50%' : '25%' }} className="cell">
+const Cell = ({
+  number, operator = false, colspan = 1, handle,
+}) => (
+  <button onClick={handle} type="button" style={{ backgroundColor: operator ? 'orange' : '', width: colspan === 2 ? '50%' : '25%' }} className="cell">
     {number}
-  </div>
+  </button>
 );
 
 export default Cell;
