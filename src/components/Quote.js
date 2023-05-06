@@ -20,16 +20,16 @@ const Quote = () => {
     }
   }, []);
 
-  if (loading) return <>Loading ...</>;
+  if (loading) return <h3 className="mt-5 pt-5">Loading ...</h3>;
 
   return (
-    <div>
+    <h3 className="mt-5 pt-5">
       {quote.quote}
       {' '}
       -
       {' '}
       {quote.author}
-    </div>
+    </h3>
   );
 };
 
