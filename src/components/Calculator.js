@@ -14,8 +14,7 @@ const Calculator = () => {
   const operator = true;
   return (
     <div className="d-flex gap-5">
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-      <h2>Let's do some Math!</h2>
+      <h2>Let us do some Math!</h2>
       <div className="calculator">
         <p>
           {obj?.total}

@@ -3,7 +3,6 @@ import React from 'react';
 const Home = () => (
   <>
     <h1>Welcome To Our Page!</h1>
-    {/* // eslint-disable-next-line react/jsx-no-comment-textnodes */}
     <span className="mb-3 d-block">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
