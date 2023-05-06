@@ -1,14 +1,22 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import './App.css';
 import Quote from './components/Quote';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div>
-      <Calculator />
-      <h3 style={{ marginTop: '20px' }}>Quote</h3>
-      <Quote />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 
